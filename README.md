@@ -13,6 +13,8 @@ Bei ChatGPT gibt es oben rechts die Möglichkeit seinen Verlauf zu teilen. Bitte
 Diesen kannst du in der folgenden Umfrage einfügen.
 ### 6. Beantworte die Umfrage
 Es gibt eine Umfrage welche du bitte ehrlich ausfüllen sollst.
+### 7. Pushe deine Ergebnisse
+Einen neuen Branch erstellen und die Ergebnisse auf diesen pushen.
 
 # Experimentaufgaben
 
