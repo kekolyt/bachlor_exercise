@@ -3,18 +3,19 @@
 ### 0. Lies dir diese ReadMe-Datei komplett durch bevor du beginnst
 ### 1. Öffne die Datei Matrix.java & starte eine Stoppuhr
 ### 2. Bearbeite den Code
-Indem du die Fehler findest und diese so löst, sodass der Code die gewünschten Funktionen erfüllt. Die Aufgaben sind unten in dieser Datei beschrieben, was du vorher durchlesen solltest.
+Der Code in Matrix,java enthält Funktionen, welche die Funktion der unten genannten Experimentaufgaben erfüllen sollen.
+Der Code ist in seiner derzeitigen Form lauffähig, enthält aber Fehler, bitte finde und korrigiere die Fehler.
 Bitte denke daran, dass du den Code auch gern so formatieren und kommentieren kannst, wie du es gewohnt bist.
+Du wirst gebeten für die Berichtigung des Codes **KEIN** ChatGPT oder genrell KI-Tools zur Unterstützung zu nutzen, aber Foren wie Stack Overflow sind natürlich kein Problem.<br>
+
+Tipp: Falls du eine Pause einlegen möchtest, kannst du die Stoppuhr einfach pausieren, denn es ist nicht nötig alles in einem Durchlauf zu lösen.
 ### 3. Teste den Code (MatrixTest.java)
-Es stehen Tests zu Verfügung, welche deinen Code auf richtigw Funktionalität überprüfen.
+Es stehen Tests zu Verfügung, welche deinen Code auf richtigw Funktionalität überprüfen. Dafür musst du nur die MatrixTest.java öffnen und anschließend ausführen.
 ### 4. Stoppe die Stoppuhr
-Wenn du den Versuch beenden willst (oder eine Pause machst), stoppe die Stoppuhr und notiere die Zeit.
-### 5. Wenn in ChatGPT-Gruppe: Teile deinen Chatverlauf
-Bei ChatGPT gibt es oben rechts die Möglichkeit seinen Verlauf zu teilen. Bitte gehe auf den Button und anschließend "Copy Link".
-Diesen kannst du in der folgenden Umfrage einfügen.
-### 6. Beantworte die Umfrage
-Es gibt eine Umfrage welche du bitte ehrlich ausfüllen sollst.
-### 7. Pushe deine Ergebnisse
+Wenn du den Versuch beenden willst, stoppe die Stoppuhr und notiere die Zeit.
+### 5. Beantworte die Umfrage
+Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst.
+### 6. Pushe deine Ergebnisse
 Einen neuen Branch erstellen und die Ergebnisse auf diesen pushen.
 
 # Experimentaufgaben
