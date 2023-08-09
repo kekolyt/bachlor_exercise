@@ -1,6 +1,6 @@
 # Anleitung zum Versuch
 
-### 0. Lies dir diese ReadMe, komplett durch bevor du beginnst
+### 0. Lies dir diese ReadMe-Datei komplett durch bevor du beginnst
 ### 1. Öffne die Datei Matrix.java & starte eine Stoppuhr
 ### 2. Bearbeite den Code
 Indem du die Fehler findest und diese so löst, sodass der Code die gewünschten Funktionen erfüllt. Die Aufgaben sind unten in dieser Datei beschrieben, was du vorher durchlesen solltest.
