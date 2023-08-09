@@ -1,10 +1,11 @@
 # Anleitung zum Versuch
 
-### 1. Öffne den Code & starte eine Stoppuhr
+### 0. Lies dir diese ReadMe, komplett durch bevor du beginnst
+### 1. Öffne die Datei Matrix.java & starte eine Stoppuhr
 ### 2. Bearbeite den Code
-Indem du die Fehler findest und diese so löst, sodass der Code die gewünschten Funktionen erfüllt. Die Aufgaben sind unten in dieser Datei beschrieben.
+Indem du die Fehler findest und diese so löst, sodass der Code die gewünschten Funktionen erfüllt. Die Aufgaben sind unten in dieser Datei beschrieben, was du vorher durchlesen solltest.
 Bitte denke daran, dass du den Code auch gern so formatieren und kommentieren kannst, wie du es gewohnt bist.
-### 3. Teste den Code
+### 3. Teste den Code (MatrixTest.java)
 Es stehen Tests zu Verfügung, welche deinen Code auf richtigw Funktionalität überprüfen.
 ### 4. Stoppe die Stoppuhr
 Wenn du den Versuch beenden willst (oder eine Pause machst), stoppe die Stoppuhr und notiere die Zeit.
