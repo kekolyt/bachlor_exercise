@@ -2,8 +2,6 @@ Welchem Geschlecht fühlst du dich zugehörig?
 
 Wie lang hast du für das Lösen der Aufgaben gebraucht (in Minuten)?
 
-Falls in ChatGPT-Gruppe: Teile hier deinen Link zum Verlauf
-
 Welcher Gruppe warst du zugeteilt?
 [] mit Unterstützung von ChatGPT
 [] ohne Unterstützung von ChatGPT
@@ -22,20 +20,6 @@ Wie würdest du deine Programmiererfahrung mit Java einschätzen?
 [] groß
 [] sehr groß
 
-Falls in ChatGPT-Gruppe: Wie groß ist deine Erfahrung mit ChatGPT generell (vor dem Versuch)
-[] sehr gering
-[] gering
-[] mittel
-[] groß
-[] sehr groß
-
-Falls in ChatGPT-Gruppe: Wie groß ist deine Erfahrung mit ChatGPT im Bezug auf Softwareentwicklung (vor dem Versuch)
-[] sehr gering
-[] gering
-[] mittel
-[] groß
-[] sehr groß
-
-Wofür hast du ChatGPT bereits genutzt?
+Wofür hast du ChatGPT bereits genutzt? (auch wenn du es in deinem Versuch nicht nutzen durftest)
 
 Hast du Anmerkungen zum Versuch?
