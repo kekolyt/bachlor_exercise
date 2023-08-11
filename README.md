@@ -1,25 +1,27 @@
 # Anleitung zum Versuch
 
 ### 0. Lies dir diese ReadMe-Datei komplett durch bevor du beginnst
-### 1. Öffne die Datei Matrix.java & starte eine Stoppuhr
-### 2. Bearbeite den Code
+### 1. Erstelle einen Branch
+Erstelle einen neuen Branch (Naming egal) und "öffne" ihn.
+### 2. Öffne die Datei Matrix.java & starte eine Stoppuhr
+### 3. Bearbeite den Code
 Der Code in Matrix,java enthält Funktionen, welche die Funktion der unten genannten Experimentaufgaben erfüllen sollen.
 Der Code ist in seiner derzeitigen Form lauffähig, enthält aber Fehler, bitte finde und korrigiere die Fehler.
 Bitte denke daran, dass du den Code auch gern so formatieren und kommentieren kannst, wie du es gewohnt bist.
 Du wirst gebeten für die Berichtigung des Codes ChatGPT zur Unterstützung zu nutzen, aber in welchem Ausmaß du das machst, ist dir überlassen.<br>
 
 Tipp: Falls du eine Pause einlegen möchtest, kannst du die Stoppuhr einfach pausieren, denn es ist nicht nötig alles in einem Durchlauf zu lösen.
-### 3. Teste den Code (MatrixTest.java)
+### 4. Teste den Code (MatrixTest.java)
 Es stehen Tests zu Verfügung, welche deinen Code auf richtigw Funktionalität überprüfen. Dafür musst du nur die MatrixTest.java öffnen und anschließend ausführen.
-### 4. Stoppe die Stoppuhr
+### 5. Stoppe die Stoppuhr
 Wenn du den Versuch beenden willst, stoppe die Stoppuhr und notiere die Zeit.
-### 5. Teile deinen Chatverlauf mit ChatGPT
+### 6. Teile deinen Chatverlauf mit ChatGPT
 Bei ChatGPT gibt es oben rechts die Möglichkeit seinen Verlauf zu teilen. Bitte gehe auf den Button und anschließend "Copy Link".
 Diesen kannst du in der folgenden Umfrage einfügen.
-### 6. Beantworte die Umfrage
+### 7. Beantworte die Umfrage
 Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst.
-### 7. Pushe deine Ergebnisse
-Einen neuen Branch erstellen und die Ergebnisse auf diesen pushen.
+### 8. Pushe deine Ergebnisse
+Deine bearbeiteten Ergebnisse in deinen neu erstellten Branch pushen.
 
 # Experimentaufgaben
 
