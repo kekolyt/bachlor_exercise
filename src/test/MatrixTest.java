@@ -9,6 +9,35 @@ import src.Matrix;
 public class MatrixTest {
 
     @Test
+    @DisplayName("Test if random matrix has correct size")
+    public void testGenerateRandomMatrixSize_1P() {
+        int rows = 5;
+        int cols = 4;
+
+        int[][] matrix = Matrix.generateRandomMatrix(rows, cols);
+
+        assertEquals(rows, matrix.length, "Wrong number of rows.");
+        for (int[] row : matrix) {
+            assertEquals(cols, row.length, "Wrong number of columns.");
+        }
+    }
+
+    @Test
+    @DisplayName("Test if random matrix has just digits (0-9)")
+    public void testGenerateRandomMatrixValues_1P() {
+        int rows = 5;
+        int cols = 4;
+
+        int[][] matrix = Matrix.generateRandomMatrix(rows, cols);
+
+        for (int[] row : matrix) {
+            for (int value : row) {
+                assertTrue(value >= 0 && value <= 9, "Value is not a digit.");
+            }
+        }
+    }
+
+    @Test
     @DisplayName("Test if 3x3 matrix is square")
     public void isSquareMatrixTest_3x3_1P() {
         int[][] matrix = {
