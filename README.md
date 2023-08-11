@@ -6,7 +6,7 @@ Erstelle einen neuen Branch (Naming egal) und "öffne" ihn.
 ### 2. Öffne die Datei Matrix.java & starte eine Stoppuhr
 ### 3. Bearbeite den Code
 Der Code in Matrix,java enthält Funktionen, welche die Funktion der unten genannten Experimentaufgaben erfüllen sollen.
-Der Code ist in seiner derzeitigen Form lauffähig, enthält aber Fehler, bitte finde und korrigiere die Fehler.
+Der Code ist in seiner derzeitigen Form nicht lauffähig und enthält Fehler, bitte finde und korrigiere die Fehler.
 Bitte denke daran, dass du den Code auch gern so formatieren und kommentieren kannst, wie du es gewohnt bist.
 Du wirst gebeten für die Berichtigung des Codes ChatGPT zur Unterstützung zu nutzen, aber in welchem Ausmaß du das machst, ist dir überlassen.<br>
 
