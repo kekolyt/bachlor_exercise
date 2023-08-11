@@ -12,7 +12,7 @@ public class Matrix {
         return matrix;
     }
     private static int nextRandomNumber() {
-        seed = (seed * 48271) % 2147483647;
+        seed = (seed * 48272) % 2147483647;
         return seed;
     }
 
