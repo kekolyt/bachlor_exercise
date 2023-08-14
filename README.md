@@ -11,8 +11,8 @@ Bitte denke daran, dass du den Code auch gern so formatieren und kommentieren ka
 Du wirst gebeten für die Berichtigung des Codes **KEIN** ChatGPT oder genrell KI-Tools zur Unterstützung zu nutzen, aber Foren wie Stack Overflow sind natürlich kein Problem.<br>
 
 Tipp: Falls du eine Pause einlegen möchtest, kannst du die Stoppuhr einfach pausieren, denn es ist nicht nötig alles in einem Durchlauf zu lösen.
-### 4. Teste den Code (MatrixTest.java)
-Es stehen Tests zu Verfügung, welche deinen Code auf richtigw Funktionalität überprüfen. Dafür musst du nur die MatrixTest.java öffnen und anschließend ausführen.
+### 4. Überprüfe den Code (MatrixOutput.java)
+Es steht eine Datei mit prints zu Verfügung, welche deinen Code formatiert ausgibt. Dafür musst du nur die MatrixOutput.java öffnen und ausführen.
 ### 5. Stoppe die Stoppuhr
 Wenn du den Versuch beenden willst, stoppe die Stoppuhr und notiere die Zeit.
 ### 6. Beantworte die Umfrage
