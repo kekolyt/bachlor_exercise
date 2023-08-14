@@ -1,21 +1,7 @@
 package src;
+import java.util.Random;
 
 public class Matrix {
-    private static int seed = 42;
-    public static int[][] generateRandomMatrix(int n, int m) {
-        int[][] matrix = new int[m][n];
-        for (int i = 0; i <= n; i++) {
-            for (int j = 0; j <= m; j++) {
-                matrix[i][j] = nextRandomNumber() % 100;
-            }
-        }
-        return matrix;
-    }
-    private static int nextRandomNumber() {
-        seed = (seed * 48271) % 2147483647;
-        return seed;
-    }
-
     public static boolean isSquareMatrix(int[][] matrix) {
         if (matrix.length == 0) {
             return true;
@@ -130,38 +116,16 @@ public class Matrix {
         }
     }
 
-    public static int[][] foldMatrix(int[][] matrix, String direction) {
-        int rows = matrix.length;
-        int cols = matrix[0].length;
-        int[][] foldedMatrix;
+    public static int[][] generateRandomMatrix(int n, int m) {
+        int[][] matrix = new int[n][m];
+        Random random = new Random();
 
-        if ("horizontal".equals(direction)) {
-            foldedMatrix = new int[rows - 1][cols];
-            for (int i = 0; i < foldedMatrix.length; i++) {
-                for (int j = 0; j < cols; j++) {
-                    if (i < rows) {
-                        foldedMatrix[i][j] = matrix[i][j] * matrix[i][j];
-                    } else {
-                        foldedMatrix[i][j] = matrix[i][j];
-                    }
-                }
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                matrix[i][j] = random.nextInt(10);
             }
-        } else if ("vertical".equals(direction)) {
-            foldedMatrix = new int[rows][cols - 1];
-            for (int i = 0; i < rows; i++) {
-                for (int j = 0; j < foldedMatrix[i].length; j++) {
-                    if (j < cols) {
-                        foldedMatrix[i][j] = matrix[i][j] * matrix[i][j];
-                    } else {
-                        foldedMatrix[i][j] = matrix[i][j];
-                    }
-                }
-            }
-        } else {
-            throw new IllegalArgumentException("Ungültige Richtung. Bitte wählen Sie 'horizontal' oder 'vertical'.");
         }
-
-        return foldedMatrix;
+        return matrix;
     }
-
 }
+

@@ -8,26 +8,24 @@ public class MatrixOutput {
     private static int[][] hadamardMatrix = {{1, 0, 0}, {0, 0, 0}, {0, 0, 0}};
 
     public static void main(String[] args) {
-        System.out.println("_______________________AUFGABE 1 - generateRandomMatrix_____________________________");
-
         int n = 5;
         int m = 3;
         try {
             matrixA = Matrix.generateRandomMatrix(m, n);
             matrixB = Matrix.generateRandomMatrix(m, n);
-            matrixC = Matrix.generateRandomMatrix(n, n);
+            matrixC = Matrix.generateRandomMatrix(m, m);
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("\nEs kam bei der Erstellung zu einem Index-Fehler.");
+            System.out.println("Es kam bei der Erstellung zu einem Index-Fehler.");
         }
 
-        System.out.println("\nErstellte Matrix A");
+        System.out.println("Erstellte Matrix A");
         printMatrix(matrixA);
         System.out.println("\nErstellte Matrix B");
         printMatrix(matrixB);
         System.out.println("\nErstellte Matrix C");
         printMatrix(matrixC);
 
-        System.out.println("_______________________AUFGABE 2 - isSquareMatrix______________________________");
+        System.out.println("\n_______________________AUFGABE 1 - isSquareMatrix______________________________");
 
         System.out.println("\nUrsprüngliche Matrix C");
         printMatrix(matrixC);
@@ -44,7 +42,7 @@ public class MatrixOutput {
             System.out.println("Input-Fehler");
         }
 
-        System.out.println("_______________________AUFGABE 3 - transpose______________________________");
+        System.out.println("\n_______________________AUFGABE 2 - transpose______________________________");
 
         System.out.println("\nUrsprüngliche Matrix B");
         printMatrix(matrixB);
@@ -56,25 +54,33 @@ public class MatrixOutput {
             System.out.println("Es kam zu einem Index-Fehler");
         }
 
-        System.out.println("_______________________AUFGABE 4 - mirrorMatrix______________________________");
+        System.out.println("\n_______________________AUFGABE 3 - mirrorMatrix______________________________");
 
         System.out.println("\nUrsprüngliche Matrix A");
         printMatrix(matrixA);
-
-        int[][] mirroredMatrixA = Matrix.mirrorMatrix(matrixA);
         System.out.println("\nGespiegelte Matrix A");
-        printMatrix(mirroredMatrixA);
 
-        System.out.println("_______________________AUFGABE 5 - rotate90Degrees______________________________");
+        try {
+            int[][] mirroredMatrixA = Matrix.mirrorMatrix(matrixA);
+            printMatrix(mirroredMatrixA);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Es kam zu einem Index-Fehler");
+        }
+
+        System.out.println("\n_______________________AUFGABE 4 - rotate90Degrees______________________________");
 
         System.out.println("\nUrsprüngliche Matrix A");
         printMatrix(matrixA);
-
-        int[][] rotatedMatrixA = Matrix.rotate90Degrees(matrixA);
         System.out.println("\nRotierte Matrix A");
-        printMatrix(rotatedMatrixA);
 
-        System.out.println("_______________________AUFGABE 6 - sumDiagonal______________________________");
+        try {
+            int[][] rotatedMatrixA = Matrix.rotate90Degrees(matrixA);
+            printMatrix(rotatedMatrixA);
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Es kam zu einem Index-Fehler");
+        }
+
+        System.out.println("\n_______________________AUFGABE 5 - sumDiagonal______________________________");
 
         System.out.println("\nUrsprüngliche Matrix C");
         printMatrix(matrixC);
@@ -90,7 +96,7 @@ public class MatrixOutput {
             System.out.println("Es kam zu einem Index-Fehler");
         }
 
-        System.out.println("_______________________AUFGABE 7 - adamardProduct______________________________");
+        System.out.println("\n_______________________AUFGABE 6 - adamardProduct______________________________");
 
         System.out.println("\nUrsprüngliche Matrix A");
         printMatrix(matrixA);
@@ -104,7 +110,7 @@ public class MatrixOutput {
             System.out.println("Es kam zu einem Index-Fehler");
         }
 
-        System.out.println("_______________________AUFGABE 8 - sortMatrix______________________________");
+        System.out.println("\n_______________________AUFGABE 7 - sortMatrix______________________________");
 
         System.out.println("\nUrsprüngliche Hadamard");
         printMatrix(hadamardMatrix);
@@ -115,31 +121,12 @@ public class MatrixOutput {
         } catch (ArrayIndexOutOfBoundsException e) {
             System.out.println("Es kam zu einem Index-Fehler");
         }
-
-        System.out.println("_______________________AUFGABE 9 - foldMatrix______________________________");
-
-        System.out.println("\nUrsprüngliche Matrix A");
-        printMatrix(matrixA);
-        System.out.println("\nUrsprüngliche Matrix B");
-        printMatrix(matrixB);
-
-        try {
-            int[][] foldedMatrixA = Matrix.foldMatrix(matrixA, "horizontal");
-            System.out.println("\nHorizontal gefaltete Matrix A");
-            printMatrix(foldedMatrixA);
-
-            int[][] foldedMatrixB = Matrix.foldMatrix(matrixB, "vertical");
-            System.out.println("\nVertikal gefaltete Matrix B");
-            printMatrix(foldedMatrixB);
-        } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("\nIndex-Fehler");
-        }
     }
 
     /**
-     * Gibt eine gegebene src.Matrix aus.
+     * Gibt eine gegebene Matrix aus.
      *
-     * @param matrix Die auszugebende src.Matrix.
+     * @param matrix Die auszugebende Matrix.
      */
     public static void printMatrix(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
@@ -149,4 +136,5 @@ public class MatrixOutput {
             System.out.println();
         }
     }
+
 }
