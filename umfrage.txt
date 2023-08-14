@@ -20,6 +20,8 @@ Wie würdest du deine Programmiererfahrung mit Java einschätzen?
 [] groß
 [] sehr groß
 
+Welche IDE nutzt du?
+
 Wofür hast du ChatGPT bereits genutzt? (auch wenn du es in deinem Versuch nicht nutzen durftest)
 
 Hast du Anmerkungen zum Versuch?
