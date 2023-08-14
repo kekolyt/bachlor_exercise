@@ -36,6 +36,8 @@ Wie groß ist deine Erfahrung mit ChatGPT im Bezug auf Softwareentwicklung (vor 
 [] groß
 [] sehr groß
 
+Welche IDE nutzt du?
+
 Wofür hast du ChatGPT bereits genutzt?
 
 Hast du Anmerkungen zum Versuch?
