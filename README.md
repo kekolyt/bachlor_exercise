@@ -4,7 +4,7 @@
 ### 1. Erstelle einen Branch
 Erstelle einen neuen Branch (Naming egal) und "öffne" ihn.
 ```
-git branch with-ChatGPT
+git checkout with-ChatGPT
 git checkout -b dein-branch 
 ```
 ### 2. Öffne die Datei Matrix.java & starte eine Stoppuhr
