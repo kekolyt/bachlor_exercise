@@ -27,7 +27,7 @@ Diesen kannst du in der folgenden Umfrage einfügen.
 
 Falls du zwischenzeitlich das Fenster schließen willst, mache diesen Schritt vor jedem Schließen.
 ### 7. Beantworte die Umfrage
-Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst.
+Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst. Öffne dazu die umfrage.txt und fülle diese aus.
 ### 8. Pushe deine Ergebnisse
 Deine bearbeiteten Ergebnisse in deinen neu erstellten Branch pushen.
 ```
