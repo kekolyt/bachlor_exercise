@@ -96,13 +96,13 @@ public class MatrixOutput {
             System.out.println("Es kam zu einem Index-Fehler");
         }
 
-        System.out.println("\n_______________________AUFGABE 6 - adamardProduct______________________________");
+        System.out.println("\n_______________________AUFGABE 6 - hadamardProduct______________________________");
 
         System.out.println("\nUrsprüngliche Matrix A");
         printMatrix(matrixA);
         System.out.println("\nUrsprüngliche Matrix B");
         printMatrix(matrixB);
-        System.out.println("\nHadamard A & B");
+        System.out.println("\nHadamard A x B");
         try {
             hadamardMatrix = Matrix.hadamardProduct(matrixA, matrixB);
             printMatrix(hadamardMatrix);
@@ -112,9 +112,9 @@ public class MatrixOutput {
 
         System.out.println("\n_______________________AUFGABE 7 - sortMatrix______________________________");
 
-        System.out.println("\nUrsprüngliche Hadamard");
+        System.out.println("\nHadamard aus 6.");
         printMatrix(hadamardMatrix);
-        System.out.println("\nsortierte Hadamard A & B");
+        System.out.println("\nsortierte Hadamard");
         try {
             Matrix.sortMatrix(hadamardMatrix);
             printMatrix(hadamardMatrix);
