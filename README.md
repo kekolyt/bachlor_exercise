@@ -4,7 +4,7 @@
 ### 1. Erstelle einen Branch
 Erstelle einen neuen Branch (Naming egal) und "öffne" ihn.
 ```
-git branch without-ChatGPT
+git checkout without-ChatGPT
 git checkout -b dein-branch 
 ```
 ### 2. Öffne die Datei Matrix.java & starte eine Stoppuhr
@@ -22,7 +22,7 @@ Es steht eine Datei mit prints zu Verfügung, welche deinen Code formatiert ausg
 ### 5. Stoppe die Stoppuhr
 Wenn du den Versuch beenden willst, stoppe die Stoppuhr und notiere die Zeit.
 ### 6. Beantworte die Umfrage
-Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst.
+Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst. Dafür einfach die umfrage.txt öffnen und ausfüllen.
 ### 7. Pushe deine Ergebnisse
 Einen neuen Branch erstellen und die Ergebnisse auf diesen pushen.
 ```
