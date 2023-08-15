@@ -1,27 +1,34 @@
 Welchem Geschlecht fühlst du dich zugehörig?
+m
 
 Wie lang hast du für das Lösen der Aufgaben gebraucht (in Minuten)?
+35:35
 
 Welcher Gruppe warst du zugeteilt?
 [] mit Unterstützung von ChatGPT
-[] ohne Unterstützung von ChatGPT
+[x] ohne Unterstützung von ChatGPT
 
 Wie würdest du deine allgemeine Programmiererfahrung einschätzen?
 [] sehr gering
 [] gering
-[] mittel
+[x] mittel
 [] groß
 [] sehr groß
 
 Wie würdest du deine Programmiererfahrung mit Java einschätzen?
 [] sehr gering
 [] gering
-[] mittel
+[x] mittel
 [] groß
 [] sehr groß
 
 Welche IDE nutzt du?
+IntelliJ
 
 Wofür hast du ChatGPT bereits genutzt? (auch wenn du es in deinem Versuch nicht nutzen durftest)
+nur für kleinere recherchen, aber sehr wenig
 
 Hast du Anmerkungen zum Versuch?
+ausgabe bei 6&7 falsch?
+Überschrift Augabe 6 - "H" fehlt
+Aufgabe 7 Ausgabe - Hadamard? oder einfach nur Matrix gemeint? sortiert a&b -> nur sortiert

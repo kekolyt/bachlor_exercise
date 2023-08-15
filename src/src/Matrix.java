@@ -6,18 +6,21 @@ public class Matrix {
         if (matrix.length == 0) {
             return true;
         }
-        return matrix.length != matrix[0].length;
+        // != -> ==
+        return matrix.length == matrix[0].length;
     }
 
     public static int[][] transpose(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        int[][] transposedMatrix = new int[rows][cols];
+        // change col/rows
+        int[][] transposedMatrix = new int[cols][rows];
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                transposedMatrix[j][i] = matrix[j + 1][i + 1];
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
+                // change values
+                transposedMatrix[i][j] = matrix[j ][i ];
             }
         }
 
@@ -30,9 +33,11 @@ public class Matrix {
 
         int[][] mirroredMatrix = new int[rows][cols];
 
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                mirroredMatrix[i][j] = matrix[j][j];
+        // start at index 0
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                // get right values
+                mirroredMatrix[i][j] = matrix[i][cols-j-1];
             }
         }
 
@@ -43,11 +48,13 @@ public class Matrix {
         int n = matrix.length;
         int m = matrix[0].length;
 
-        int[][] rotatedMatrix = new int[n][m];
+        // change dimensions
+        int[][] rotatedMatrix = new int[m][n];
 
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                rotatedMatrix[i][j] = matrix[i][j];
+                // select correct field to change
+                rotatedMatrix[j][n-1-i] = matrix[i][j];
             }
         }
 
@@ -59,9 +66,11 @@ public class Matrix {
             throw new IllegalArgumentException("Die src.Matrix muss quadratisch sein.");
         }
 
-        int sum = 1;
-        for (int i = 1; i < matrix.length - 1; i++) {
-            sum *= matrix[i][i];
+        // default values need to be 0
+        int sum = 0;
+        for (int i = 0; i < matrix.length ; i++) {
+            // add all values
+            sum += matrix[i][i];
         }
         return sum;
     }
@@ -79,7 +88,7 @@ public class Matrix {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                result[i][j] = matrixA[i][j] + matrixB[j][i];
+                result[i][j] = matrixA[i][j] * matrixB[i][j];
             }
         }
 
@@ -90,16 +99,16 @@ public class Matrix {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        int[] arr = new int[rows * cols + 1];
+        int[] arr = new int[rows * cols];
         int index = 0;
-        for (int i = 0; i <= rows; i++) {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
                 arr[index++] = matrix[i][j];
             }
         }
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
+        for (int i = 0; i < arr.length ; i++) {
+            for (int j = 0; j < arr.length-1; j++) {
                 if (arr[j] > arr[j + 1]) {
                     int temp = arr[j];
                     arr[j] = arr[j + 1];
@@ -109,9 +118,10 @@ public class Matrix {
         }
 
         index = 0;
-        for (int i = 0; i <= rows; i++) {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                matrix[i][j] = arr[index++];
+                matrix[i][j] = arr[index];
+                index ++;
             }
         }
     }
