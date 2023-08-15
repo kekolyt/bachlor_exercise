@@ -1,6 +1,6 @@
 Welchem Geschlecht fühlst du dich zugehörig?
 
-Wie lang hast du für das Lösen der Aufgaben gebraucht (in Minuten)?
+Wie lang hast du für das Lösen der Aufgaben gebraucht (in Minuten:Sekunden)?
 
 Teile hier deinen Link zum Verlauf
 
