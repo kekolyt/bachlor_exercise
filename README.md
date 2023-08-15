@@ -3,6 +3,10 @@
 ### 0. Lies dir diese ReadMe-Datei komplett durch bevor du beginnst
 ### 1. Erstelle einen Branch
 Erstelle einen neuen Branch (Naming egal) und "öffne" ihn.
+```
+git branch without-ChatGPT
+git checkout -b dein-branch 
+```
 ### 2. Öffne die Datei Matrix.java & starte eine Stoppuhr
 ### 3. Bearbeite den Code
 Der Code in Matrix,java enthält Funktionen, welche die Funktion der unten genannten Experimentaufgaben erfüllen sollen.
@@ -21,6 +25,11 @@ Wenn du den Versuch beenden willst, stoppe die Stoppuhr und notiere die Zeit.
 Es gibt eine Umfrage, welche du bitte ehrlich ausfüllen sollst.
 ### 7. Pushe deine Ergebnisse
 Einen neuen Branch erstellen und die Ergebnisse auf diesen pushen.
+```
+git add .
+git commit -m "Beschreibung deiner Änderungen"
+git push origin dein-branch
+```
 
 # Experimentaufgaben
 
