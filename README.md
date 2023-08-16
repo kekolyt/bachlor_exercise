@@ -7,6 +7,8 @@ Erstelle einen neuen Branch (Naming egal) und "öffne" ihn.
 git checkout without-ChatGPT
 git checkout -b dein-branch 
 ```
+
+Note: Das Problem bei GitHub ist, dass du Kollaborator sein musst, um neue Branches erstellen zu können. Es liegt an dir, ob ich dich hinzufüge oder du das Projekt nach dem Bearbeiten lieber an mich per Mail (Marius.Pest@computacenter.com) schickst. Falls du es per GitHub machen möchtest, müsstest du mir nur deinen Nutzernamen mitteilen.
 ### 2. Öffne die Datei Matrix.java & starte eine Stoppuhr
 ### 3. Bearbeite den Code
 Der Code in Matrix,java enthält Funktionen, welche die Funktion der unten genannten Experimentaufgaben erfüllen sollen.
@@ -30,6 +32,8 @@ git add .
 git commit -m "Beschreibung deiner Änderungen"
 git push origin dein-branch
 ```
+
+Oder schicke mir das Projekt als zip-Datei per Mail.
 
 # Experimentaufgaben
 
