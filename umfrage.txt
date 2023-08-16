@@ -1,15 +1,17 @@
 Welchem Geschlecht fühlst du dich zugehörig?
+männlich
 
 Wie lang hast du für das Lösen der Aufgaben gebraucht (in Minuten:Sekunden)?
+68:07 min
 
 Welcher Gruppe warst du zugeteilt?
 [] mit Unterstützung von ChatGPT
-[] ohne Unterstützung von ChatGPT
+[x] ohne Unterstützung von ChatGPT
 
 Wie würdest du deine allgemeine Programmiererfahrung einschätzen?
 [] sehr gering
 [] gering
-[] mittel
+[x] mittel
 [] groß
 [] sehr groß
 
@@ -17,11 +19,14 @@ Wie würdest du deine Programmiererfahrung mit Java einschätzen?
 [] sehr gering
 [] gering
 [] mittel
-[] groß
+[x] groß
 [] sehr groß
 
 Welche IDE nutzt du?
+IntelliJ IDEA
 
 Wofür hast du ChatGPT bereits genutzt? (auch wenn du es in deinem Versuch nicht nutzen durftest)
+Programmieren, Dokus schreiben, Bewerbungen schreiben, Speiseplan machen
 
 Hast du Anmerkungen zum Versuch?
+Matrizen machen meinen Kopf kaputt, habe aber etwas dazu gelernt :D
