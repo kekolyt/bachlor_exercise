@@ -1,9 +1,10 @@
 package src;
+import java.util.Arrays;
 import java.util.Random;
 
 public class Matrix {
     public static boolean isSquareMatrix(int[][] matrix) {
-        if (matrix.length == 0) {
+        if (matrix.length == matrix[0].length) {
             return true;
         }
         return matrix.length != matrix[0].length;
@@ -13,11 +14,12 @@ public class Matrix {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        int[][] transposedMatrix = new int[rows][cols];
+        int[][] transposedMatrix = new int[cols][rows];
 
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
-                transposedMatrix[j][i] = matrix[j + 1][i + 1];
+        for (int i = 0; i < cols; i++) {
+            for (int j = 0; j < rows; j++) {
+
+                transposedMatrix[i][j] = matrix[j][i];
             }
         }
 
@@ -30,9 +32,10 @@ public class Matrix {
 
         int[][] mirroredMatrix = new int[rows][cols];
 
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                mirroredMatrix[i][j] = matrix[j][j];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+
+                mirroredMatrix[i][cols - 1 - j] = matrix[i][j];
             }
         }
 
@@ -40,14 +43,14 @@ public class Matrix {
     }
 
     public static int[][] rotate90Degrees(int[][] matrix) {
-        int n = matrix.length;
-        int m = matrix[0].length;
+        int rows = matrix.length;
+        int cols = matrix[0].length;
 
-        int[][] rotatedMatrix = new int[n][m];
+        int[][] rotatedMatrix = new int[cols][rows];
 
-        for (int i = 0; i < n; i++) {
-            for (int j = 0; j < m; j++) {
-                rotatedMatrix[i][j] = matrix[i][j];
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                rotatedMatrix[j][rows-1-i] = matrix[i][j];
             }
         }
 
@@ -59,9 +62,9 @@ public class Matrix {
             throw new IllegalArgumentException("Die src.Matrix muss quadratisch sein.");
         }
 
-        int sum = 1;
-        for (int i = 1; i < matrix.length - 1; i++) {
-            sum *= matrix[i][i];
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            sum += matrix[i][i];
         }
         return sum;
     }
@@ -79,7 +82,7 @@ public class Matrix {
 
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                result[i][j] = matrixA[i][j] + matrixB[j][i];
+                result[i][j] = matrixA[i][j] * matrixB[i][j];
             }
         }
 
@@ -90,28 +93,31 @@ public class Matrix {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        int[] arr = new int[rows * cols + 1];
+        //create an array with the values
+        int[] array = new int[rows * cols];
         int index = 0;
-        for (int i = 0; i <= rows; i++) {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                arr[index++] = matrix[i][j];
+                array[index++] = matrix[i][j];
             }
         }
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
+        //order the array from small to big
+        Arrays.sort(array);
+//        for (int i = 0; i < array.length - 1; i++) {
+//            for (int j = 0; j < array.length - i - 1; j++) {
+//                if (array[j] > array[j + 1]) {
+//                    int temp = array[j];
+//                    array[j] = array[j + 1];
+//                    array[j + 1] = temp;
+//                }
+//            }
+//        }
 
         index = 0;
-        for (int i = 0; i <= rows; i++) {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                matrix[i][j] = arr[index++];
+                matrix[i][j] = array[index++];
             }
         }
     }
