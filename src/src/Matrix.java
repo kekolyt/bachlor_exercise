@@ -1,121 +1,121 @@
 package src;
 
+import java.util.Arrays;
 import java.util.Random;
 
 public class Matrix {
     public static boolean isSquareMatrix(int[][] matrix) {
-        if (matrix.length == 0) {
-            return true;
-        }
-        return matrix.length != matrix[0].length;
+        return matrix.length > 0 && matrix.length == matrix[0].length;
     }
 
     public static int[][] transpose(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
-
-        int[][] transposedMatrix = new int[rows][cols];
-
+    
+        int[][] transposedMatrix = new int[cols][rows];
+    
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                transposedMatrix[j][i] = matrix[j + 1][i + 1];
+                transposedMatrix[j][i] = matrix[i][j];
             }
         }
-
+    
         return transposedMatrix;
     }
+    
 
     public static int[][] mirrorMatrix(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
-
+    
         int[][] mirroredMatrix = new int[rows][cols];
-
-        for (int i = 1; i < rows; i++) {
-            for (int j = 1; j < cols; j++) {
-                mirroredMatrix[i][j] = matrix[j][j];
+    
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                mirroredMatrix[i][j] = matrix[i][cols - j - 1]; // Spiegelung an der Vertikalen
             }
         }
-
+    
         return mirroredMatrix;
     }
+    
 
     public static int[][] rotate90Degrees(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
-
-        int[][] rotatedMatrix = new int[n][m];
-
+    
+        int[][] rotatedMatrix = new int[m][n]; // Vertausche Zeilen und Spalten
+    
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
-                rotatedMatrix[i][j] = matrix[i][j];
+                rotatedMatrix[j][n - i - 1] = matrix[i][j]; // Drehe um 90 Grad
             }
         }
-
+    
         return rotatedMatrix;
     }
+    
 
     public static int sumDiagonal(int[][] matrix) {
         if (!isSquareMatrix(matrix)) {
-            throw new IllegalArgumentException("Die src.Matrix muss quadratisch sein.");
+            throw new IllegalArgumentException("Die Matrix muss quadratisch sein.");
         }
-
-        int sum = 1;
-        for (int i = 1; i < matrix.length - 1; i++) {
-            sum *= matrix[i][i];
+    
+        int sum = 0;
+        for (int i = 0; i < matrix.length; i++) {
+            sum += matrix[i][i]; // Hauptdiagonalelemente addieren
         }
         return sum;
     }
+    
 
 
     public static int[][] hadamardProduct(int[][] matrixA, int[][] matrixB) {
         int rows = matrixA.length;
         int cols = matrixA[0].length;
-
+    
         if (rows != matrixB.length || cols != matrixB[0].length) {
             throw new IllegalArgumentException("Die Matrizen müssen die gleiche Größe haben.");
         }
-
+    
         int[][] result = new int[rows][cols];
-
+    
         for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                result[i][j] = matrixA[i][j] + matrixB[j][i];
+                result[i][j] = matrixA[i][j] * matrixB[i][j]; // Element-für-Element-Multiplikation
             }
         }
-
+    
         return result;
     }
+    
 
     public static void sortMatrix(int[][] matrix) {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        int[] arr = new int[rows * cols + 1];
+        int[] flattenedArray = new int[rows * cols];
         int index = 0;
-        for (int i = 0; i <= rows; i++) {
+
+        // Flattening the matrix into a 1D array
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                arr[index++] = matrix[i][j];
+                flattenedArray[index++] = matrix[i][j];
             }
         }
 
-        for (int i = 0; i < arr.length - 1; i++) {
-            for (int j = 0; j < arr.length - i - 1; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    int temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
-                }
-            }
-        }
+        // Sorting the flattened array
+        Arrays.sort(flattenedArray);
 
+        // Filling the sorted values back into the matrix
         index = 0;
-        for (int i = 0; i <= rows; i++) {
+        for (int i = 0; i < rows; i++) {
             for (int j = 0; j < cols; j++) {
-                matrix[i][j] = arr[index++];
+                matrix[i][j] = flattenedArray[index++];
             }
         }
     }
+
     public static int[][] generateRandomMatrix(int n, int m) {
         int[][] matrix = new int[n][m];
         Random random = new Random();
