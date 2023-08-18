@@ -1,25 +1,25 @@
 Welchem Geschlecht fühlst du dich zugehörig?
 
 Wie lang hast du für das Lösen der Aufgaben gebraucht (in Minuten:Sekunden)?
-
+29:36
 Teile hier deinen Link zum Verlauf
-
+https://chat.openai.com/share/f2e2b61c-e9b2-4e7c-a5bd-5b75ec8417a8
 Welcher Gruppe warst du zugeteilt?
-[] mit Unterstützung von ChatGPT
+[x] mit Unterstützung von ChatGPT
 [] ohne Unterstützung von ChatGPT
 
 Wie würdest du deine allgemeine Programmiererfahrung einschätzen?
 [] sehr gering
 [] gering
 [] mittel
-[] groß
+[x] groß
 [] sehr groß
 
 Wie würdest du deine Programmiererfahrung mit Java einschätzen?
 [] sehr gering
 [] gering
 [] mittel
-[] groß
+[x] groß
 [] sehr groß
 
 Wie groß ist deine Erfahrung mit ChatGPT generell (vor dem Versuch)
@@ -27,17 +27,18 @@ Wie groß ist deine Erfahrung mit ChatGPT generell (vor dem Versuch)
 [] gering
 [] mittel
 [] groß
-[] sehr groß
+[x] sehr groß
 
 Wie groß ist deine Erfahrung mit ChatGPT im Bezug auf Softwareentwicklung (vor dem Versuch)
 [] sehr gering
 [] gering
 [] mittel
 [] groß
-[] sehr groß
+[x] sehr groß
 
 Welche IDE nutzt du?
-
+VS Code
 Wofür hast du ChatGPT bereits genutzt?
-
+Andere Java Programme, Penetrationstest, Recherche, Hilfe Satzbau und Grammatik, Themenfindung für Arbeiten, Errorbehandlung jeglicher Art.
 Hast du Anmerkungen zum Versuch?
+Ich glaube ohne ChatGPT dauert es deutlich länger die verschiedenen For-Schleifen zu verstehen und zu verändern, damit das richtige passiert.
